@@ -4,26 +4,23 @@ import Button from "./components/Button";
 import Horizontal from "./components/Horizontal";
 import calculator, { initialState } from "./calculator_logic";
 
-// create class component of App
 export default class App extends Component {
   state = initialState;
 
-  // handle tap method
   HandleTap = (type, value) => {
     this.setState((state) => calculator(type, value, state));
   };
 
-  // render method
   render() {
     return (
       <View style={styles.container}>
-        {/* Status bae here */}
+        {}
         <SafeAreaView>
           <Text style={styles.value}>
             {parseFloat(this.state.currentValue).toLocaleString()}
           </Text>
 
-          {/* Do create componentRow */}
+          {}
           <Horizontal>
             <Button
               text="C"
@@ -99,7 +96,6 @@ export default class App extends Component {
   }
 }
 
-// create styles of app
 const styles = StyleSheet.create({
   container: {
     flex: 1,

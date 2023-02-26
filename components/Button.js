@@ -22,7 +22,6 @@ export default ({ onPress, text, size, theme }) => {
   );
 };
 
-// set dimmenstion
 const screen = Dimensions.get("window");
 const buttonWidth = screen.width / 4;
 

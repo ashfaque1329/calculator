@@ -48,7 +48,6 @@ const handleEqual = (state) => {
   }
 };
 
-// calculator function
 const calculator = (type, value, state) => {
   switch (type) {
     case "number":
